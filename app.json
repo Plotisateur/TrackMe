@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Gamma Tracker",
+    "slug": "gamma-tracker",
+    "version": "2.0.0",
+    "scheme": "gammatracker",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0E1116",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.gamma.workouttracker"
+    },
+    "android": {
+      "package": "com.gamma.workouttracker",
+      "versionCode": 2,
+      "adaptiveIcon": {
+        "backgroundColor": "#0E1116",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": ["VIBRATE", "POST_NOTIFICATIONS", "WAKE_LOCK"],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-notifications",
+        {
+          "color": "#4ADE80"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0E1116"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
